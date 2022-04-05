@@ -1,0 +1,209 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    }
+    
+    h1, h2, h3 {
+        color: black;
+    }
+
+    h1 {
+        justify-content: center;
+        font-size: 4.5em;
+        margin-top: .45em;
+    }
+    
+    #main-inputs {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: .35em;
+        margin-bottom: 1em;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #price {
+        justify-content:left;
+        width: 25%;
+        text-align: center;
+        align-content: center;
+        padding: .35em;
+        font-size: 1em;
+        border-radius: .5em;
+        text-align-last: center;
+    }
+    
+    #amount-due {
+        padding: .35em;
+        font-size: 1em;
+        border-radius: .5em;
+    }
+    
+    #cash {
+        justify-content: right;
+        width: 25%;
+        text-align: center;
+        align-content: center;
+        padding: .35em;
+        font-size: 1em;
+        border-radius: .5em;
+        text-align-last: center;
+    }
+    
+    #amount-received {
+        padding: .35em;
+        font-size: 1em;
+        border-radius: .5em;
+    }
+    
+    #calculate {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: .5em;
+    }
+    
+    #calculate-change {
+        font-size: 1em;
+        color:rgb(252, 252, 252);
+        background-color: rgb(9, 119, 26);
+        text-align: center;
+        border-radius: 10px;
+        padding: 25px;
+        transition-duration: 2s;
+    }
+    
+    #calculate-change:hover {
+        color:rgb(8, 130, 32);
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        border-radius: 10px;
+        padding: 25px;
+        box-shadow: .4em;
+        background-image: url(/media/photos/register.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: url(/media/photos/cash.png),auto;
+    }
+    
+    p {
+        color: black;
+        font-size: 2em;
+        background-color: white;
+        opacity: 0.7;
+        border-radius:5%;
+    }
+    
+    #bills, #cents {
+        color: white;
+        align-content: center;
+        padding: 1em;
+    }
+
+    #bills > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.781);
+        border: 1px solid;
+        padding-top: 10px;
+        box-shadow: 5px 10px 8px #888888;
+    }
+
+    #cents > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: rgba(116, 114, 114, 0.781);
+        border: 1px solid;
+        padding-top: 10px;
+        box-shadow: 5px 10px 8px #888888;
+    }
+    /* Style the video: 100% width and height to cover the entire window */
+    #myVideo {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -100;
+        background-color: rgba(0, 0, 0, 0.798);
+        opacity: .5;
+    }
+
+    #foot {
+        display: flex;
+        justify-content: right;
+        align-items: flex-end;
+        margin-right: .75em;
+        width: 100vw;
+        font-size: 1vmax;
+    }
+
+    div.money {
+        width: 16em;
+        height: auto;
+        font-size: 1.3em;
+    }
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */
+    div.money {
+        width: 4.5em;
+        height: auto;
+        font-size: .8em;
+    }
+    div.money-cents {
+        width: 3em;
+        height: auto;
+    }}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+    div.money {
+        width: 5em;
+        height: auto;
+    }
+    div.money-cents {
+        width: 3em;
+        height: auto;
+    }}
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    div.money {
+        width: 6em;
+        height: auto;
+    }
+    div.money-cents {
+        width: 3em;
+        height: auto;
+    }}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    div.money {
+        width: 7.8em;
+        height: auto;
+    }
+    div.money-cents {
+        width: 5em;
+        height: auto;
+    }}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+    div.money {
+        width: 9em;
+        height: auto;
+    }
+    div.money-cents {
+        width: 5em;
+        height: auto;
+    }}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+    div.money {
+        width: 14.4em;
+        height: auto;
+    }
+    div.money-cents {
+        width: 5em;
+        height: auto;
+    }}

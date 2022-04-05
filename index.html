@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500;700&family=Lato:ital@0;1&family=Raleway:wght@100;200;300;400&family=Roboto+Slab&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+  <!-- <title>Change Calculator</title> -->
+</head>
+
+<body>
+  <!-- Write your markup here -->
+  <h1>Change Calculator</h1>
+
+  <section id="main-inputs">
+    <div id="price">
+      <h3>Total Price Due</h3>
+      <input id="amount-due" type="text" placeholder="Amount Due" />
+    </div>
+    <div id="cash">
+      <h3>Cash Received</h3>
+      <input id="amount-received" type="text" placeholder="Amount Recieved" />
+    </div>
+  </section>
+  <div id="calculate">
+    <button type="image" src="/media/photos/register.png" id="calculate-change" />Calculate</button>
+  </div>
+  <div>
+    <p type="text" id="currency">
+    </p>
+  </div>
+  <section id="all-currency">
+    <h2>Currency</h2>
+    <section id="bills">
+      <div>
+        <div class="money">
+          <img src="/media/photos/$100.jpg" />
+          <p id="hundred"></p>
+        </div>
+        <div class="money">
+          <img src="/media/photos/$50.jpg" />
+          <p id="fifty" type="text"></p>
+        </div>
+        <div class="money">
+          <img src="/media/photos/$20.jpg" />
+          <p id="twenty" type="text"></p>
+        </div>
+        <div class="money">
+          <img src="/media/photos/$10.jpg" />
+          <p id="ten" type="text"></p>
+        </div>
+        <div class="money">
+          <img src="/media/photos/$5.jpg" />
+          <p id="five" type="text"></p>
+        </div>
+        <div class="money">
+          <img src="/media/photos/$1.jpg" />
+          <p id="dollar" type="text"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cents">
+      <div>
+        <div class="money-cents">
+          <img src="/media/photos/quarter.png" />
+          <p id="quarter"></p>
+        </div>
+        <div class="money-cents">
+          <img src="/media/photos/dime.png" />
+          <p id="dime" type="text"></p>
+        </div>
+        <div class="money-cents">
+          <img src="/media/photos/nickel.png" />
+          <p id="nickel" type="text"></p>
+          </h3>
+        </div>
+        <div class="money-cents">
+          <img src="/media/photos/penny.png" />
+          <p id="penny" type="text"></p>
+          </h3>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <script src="main.js" charset="utf-8"></script>
+  <video autoplay muted loop id="myVideo">
+    <source src="/media/videos/change.mp4" type="video/mp4">
+  </video>
+
+</body>
+
+</html>
