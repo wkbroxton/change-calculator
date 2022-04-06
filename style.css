@@ -85,10 +85,10 @@
         border-radius: 10px;
         padding: 25px;
         box-shadow: .4em;
-        background-image: url(/media/photos/register.png);
+        background-image: url(/Users/williambroxton/code/ccc/projects/web102-change-calculator/media/photos/register.png);
         background-repeat: no-repeat;
         background-size: contain;
-        cursor: url(/media/photos/cash.png),auto;
+        cursor: url(/Users/williambroxton/code/ccc/projects/web102-change-calculator/media/photos/cash.png),auto;
     }
     
     p {

@@ -42,12 +42,10 @@ function handleClickEvent() {
   chaChing.play();
   let price = document.getElementById("amount-due").value;
   let cash = document.getElementById("amount-received").value;
-  let result = calculateChange(price, cash);
-  //   document.getElementById("result").innerHTML = `${result}`;
-  console.log(result);
+  let result = calculateChange(price, cash); // mutated array currency from line 38
   for (let i = 0; i < result.length; i++) {
     document.getElementById(result[i]["currencyType"]).innerHTML =
-      result[i]["count"];
+      result[i]["count"]; // the only reason this works is because the ID matches exactly on the HTML Document
   }
   document.getElementById("currency").innerHTML = `$${(cash - price).toFixed(
     2

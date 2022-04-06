@@ -92,21 +92,18 @@ describe("Change Calculator", function () {
         .end()
         .then((change) => {
           expect(change.hundred).to.equal(
-            "9",
+            "0",
             "Expected hundreds didn't match"
           );
-          expect(change.fifty).to.equal("3", "Expected fiftys didn't match");
+          expect(change.fifty).to.equal("0", "Expected fiftys didn't match");
           expect(change.twenty).to.equal("0", "Expected twentys didn't match");
           expect(change.ten).to.equal("0", "Expected tens didn't match");
-          expect(change.five).to.equal("4", "Expected fives didn't match");
-          expect(change.dollar).to.equal("9", "Expected dollars didn't match");
-          expect(change.quarter).to.equal(
-            "3",
-            "Expected quarters didn't match"
-          );
+          expect(change.five).to.equal("1", "Expected fives didn't match");
+          expect(change.dollar).to.equal("4", "Expected dollars didn't match");
+          expect(change.quarter).to.equal("3", "Expected dollars didn't match");
           expect(change.dime).to.equal("0", "Expected dimes didn't match");
           expect(change.nickel).to.equal("0", "Expected nickels didn't match");
-          expect(change.penny).to.equal("4", "Expected pennies didn't match");
+          expect(change.penny).to.equal("3", "Expected pennies didn't match");
         });
     });
 
@@ -132,21 +129,18 @@ describe("Change Calculator", function () {
         .end()
         .then((change) => {
           expect(change.hundred).to.equal(
-            "9",
+            "0",
             "Expected hundreds didn't match"
           );
-          expect(change.fifty).to.equal("3", "Expected fiftys didn't match");
+          expect(change.fifty).to.equal("0", "Expected fiftys didn't match");
           expect(change.twenty).to.equal("0", "Expected twentys didn't match");
           expect(change.ten).to.equal("0", "Expected tens didn't match");
-          expect(change.five).to.equal("4", "Expected fives didn't match");
-          expect(change.dollar).to.equal("9", "Expected dollars didn't match");
-          expect(change.quarter).to.equal(
-            "3",
-            "Expected quarters didn't match"
-          );
-          expect(change.dime).to.equal("0", "Expected dimes didn't match");
-          expect(change.nickel).to.equal("0", "Expected nickels didn't match");
-          expect(change.penny).to.equal("4", "Expected pennies didn't match");
+          expect(change.five).to.equal("1", "Expected fives didn't match");
+          expect(change.dollar).to.equal("1", "Expected dollars didn't match");
+          expect(change.quarter).to.equal("2", "Expected dollars didn't match");
+          expect(change.dime).to.equal("1", "Expected dimes didn't match");
+          expect(change.nickel).to.equal("1", "Expected nickels didn't match");
+          expect(change.penny).to.equal("1", "Expected pennies didn't match");
         });
     });
   });
