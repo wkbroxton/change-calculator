@@ -4,7 +4,7 @@ const chaChing = new Audio(
   "https://docs.google.com/uc?export=download&id=1L6d0xtsOvnKTMnLSa1KidM09jcbXgQp-"
 );
 
-chaChing.volume = 0.1;
+chaChing.volume = 0.7;
 
 const player = new Audio();
 

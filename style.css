@@ -94,8 +94,8 @@
     p {
         color: black;
         font-size: 2em;
-        background-color: white;
-        opacity: 0.7;
+        /* background-color: white;
+        opacity: 0.7; */
         border-radius:5%;
     }
     
